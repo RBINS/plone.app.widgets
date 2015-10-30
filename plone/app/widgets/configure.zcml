@@ -145,6 +145,13 @@
       file="static/widgets.min.js"
       layer=".interfaces.IWidgetsLayer"
       />
+<!--
+  <browser:resource
+      name="plone.app.widgets.js"
+      file="static/widgets.js"
+      layer=".interfaces.IWidgetsLayer"
+      />
+-->
   <browser:resource
       name="plone.app.widgets.min.js.map"
       file="static/widgets.min.js.map"

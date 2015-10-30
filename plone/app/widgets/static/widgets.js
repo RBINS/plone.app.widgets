@@ -20447,12 +20447,15 @@ Picker.extend( 'pickatime', TimePicker )
 define('mockup-i18n',[
   'jquery'
 ], function($) {
+  'use strict';
   
 
   var I18N = function() {
     var self = this;
 
+ 
     self.baseUrl = $('body').attr('data-i18ncatalogurl');
+    if (!self.baseUrl){self.baseUrl = $('head').attr('data-i18ncatalogurl');};
     if (!self.baseUrl) {
       self.baseUrl = '/plonejsi18n';
     }
